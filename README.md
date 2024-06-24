@@ -1,3 +1,5 @@
+Tests are being run with open-source tool playwright 
+
 Instructions on How to Run the Tests:
 
 Prerequisites:
@@ -10,8 +12,8 @@ Installation:
 
 Open your terminal or command prompt.
 Navigate to the directory where you want to clone the repository.
-Clone the repository by running the command: git clone https://github.com/aiaiaizen/todomvcplaywright.git
-Change into the cloned repository's directory: cd todomvcplaywright
+Clone the repository by running the command: git clone https://github.com/aiaiaizen/todomvc.git
+Change into the cloned repository's directory: cd todomvc
 Install the project dependencies by running the command: npm install
 This command will install Playwright and any other required dependencies specified in the package.json file.
 
