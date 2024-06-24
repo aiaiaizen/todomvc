@@ -3,6 +3,8 @@ const { test, expect } = require('@playwright/test');
 async function launchBrowser() {
   const browser = await require('playwright').chromium.launch({
     executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    // Choose Correct executable path 
+      //use this executablePath if on mac: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
     headless: false // Run in headful mode to observe the test
   });
   const context = await browser.newContext();
