@@ -85,4 +85,4 @@ Navigating between different tabs (All, Active, Completed)
 
 
 The tests aim to provide a good coverage of the core features of the application.
-However, there may be additional edge cases or scenarios that are not covered in these tests. You can expand the test suite to include more comprehensive test cases based on your specific requirements.
+However, there may be additional edge cases or scenarios that are not covered in these tests.
