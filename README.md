@@ -32,18 +32,44 @@ Clear cache if you cant install chrome: rm -rf /Users/charles/Library/Caches/ms-
 The `playwright.config.js` file contains a configuration option called `executablePath` that specifies the location of the Chrome executable on your system. You may need to adjust this path based on your operating system and Chrome installation location.
 
 #### For macOS:
+Locate Chrome:
+
+Open Finder and go to Applications.
+Right-click on Google Chrome and select Show Package Contents.
+Navigate to Contents/MacOS.
+Note the path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome.
+Set executablePath:
+
+In your Playwright script, 
+
 The default path for Chrome on macOS is:
 `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`
 
 If Chrome is installed in a different location on your macOS system, update the `executablePath` accordingly.
 
 #### For Windows:
+
+Locate Chrome:
+
+Open File Explorer and go to C:\Program Files\Google\Chrome\Application.
+Note the path: C:\Program Files\Google\Chrome\Application\chrome.exe.
+Set executablePath:
+
+In your Playwright script, 
+
 The default path for Chrome on Windows is:
 `C:\Program Files\Google\Chrome\Application\chrome.exe`
 
 If Chrome is installed in a different location on your Windows system, update the `executablePath` accordingly. Make sure to use double backslashes (`\\`) in the file path.
 
 #### For Linux:
+Locate Chrome: Open a terminal and type: which google-chrome
+
+Note the output path, typically /usr/bin/google-chrome.
+Set executablePath:
+
+In your Playwright script, 
+
 On Linux, you can usually find the Chrome executable at:
 `/usr/bin/google-chrome`
 
