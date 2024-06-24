@@ -1,10 +1,13 @@
 Acceptance Criteria
 AC1// Add and delete todos 
 User Story: As a user, I should be able to add and delete todos
+
 Adding Todos
 Given the user is on the TodoMVC app,
+
 When the user inputs a task in the new todo input field and presses Enter,
 Then the task should be added to the todo list.
+
 Deleting Todos
 Given there are tasks in the todo list,
 When the user hovers over a task and clicks the delete button,
