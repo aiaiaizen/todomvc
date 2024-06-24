@@ -1,0 +1,14 @@
+{
+  "name": "todo-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright tests for TodoMVC application",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1"
+  }
+}
