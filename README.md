@@ -20,6 +20,45 @@ This command will install Playwright and any other required dependencies specifi
 
 Running the Tests:
 
+Install chrome: npx playwright install chrome
+
+Clear cache if you cant install chrome: rm -rf /Users/charles/Library/Caches/ms-playwright
+
+
+## Configuration
+
+### Setting the Chrome Executable Path
+
+The `playwright.config.js` file contains a configuration option called `executablePath` that specifies the location of the Chrome executable on your system. You may need to adjust this path based on your operating system and Chrome installation location.
+
+#### For macOS:
+The default path for Chrome on macOS is:
+`/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`
+
+If Chrome is installed in a different location on your macOS system, update the `executablePath` accordingly.
+
+#### For Windows:
+The default path for Chrome on Windows is:
+`C:\Program Files\Google\Chrome\Application\chrome.exe`
+
+If Chrome is installed in a different location on your Windows system, update the `executablePath` accordingly. Make sure to use double backslashes (`\\`) in the file path.
+
+#### For Linux:
+On Linux, you can usually find the Chrome executable at:
+`/usr/bin/google-chrome`
+
+If Chrome is installed in a different location on your Linux system, update the `executablePath` accordingly.
+
+If you are unsure about the exact path, you can follow these steps to find the Chrome executable on your system:
+
+1. Open Chrome and click on the three-dot menu in the upper-right corner.
+2. Go to "Help" > "About Google Chrome".
+3. In the "About" tab, you will see the Chrome installation path.
+
+Use this path to set the `executablePath` in the `playwright.config.js` file.
+
+
+
 To run the Playwright tests, use the following command: npx playwright test
 This command will execute all the test files in the project.
 Playwright will launch the specified browser (e.g., Chrome) and run the tests in headless mode by default.
