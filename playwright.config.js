@@ -3,8 +3,9 @@ const { test, expect } = require('@playwright/test');
 test.describe('Custom Chrome Path', () => {
   test('should launch Chrome from a specific path', async () => {
     const browser = await require('playwright').chromium.launch({
-      executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', // Correct executable path
-      headless: false
+      executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', // Choose Correct executable path 
+      //use this executablePath if on mac: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+       headless: false
     });
     const context = await browser.newContext();
     const page = await context.newPage();
