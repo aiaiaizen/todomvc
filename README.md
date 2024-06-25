@@ -103,8 +103,10 @@ Test Files:
 
 The test files are located in the tests directory of the repository.
 Each test file focuses on a specific feature or functionality of the todo application.
-The test files follow the naming convention: *.spec.js (e.g., addTodo.spec.js, editTodo.spec.js).
+The test files follow the naming convention: *.spec.js (e.g., ac1.spec.js, ac2.spec.js).
 
+
+Run The Files: npx playwright test *.spec.js, e.g npx playwright test ac1.spec.js
 
 
 Implementation Strategy:
